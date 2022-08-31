@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="main_class">
     it works like body
-    hi jiya i'm Osama
+    You you can start your app 
     </div>
   );
 }
