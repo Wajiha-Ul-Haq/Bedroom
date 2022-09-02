@@ -1,0 +1,95 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:white;
+}
+
+.main_class{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('/pexels-felipe-hueb-2747901.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    display: flex;
+    height: 15vh;
+    width: 90%;
+    align-items: center;
+    justify-content:space-between;
+    margin: auto;
+
+
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.navbar ul li a::after{
+content: '';
+height: 5px;
+position: absolute;
+bottom: -10px;
+left: 0px;
+ background:#009688;
+ transition: 0.5s;
+}
+.navbar ul li a:hover::after{
+width: 100%;
+}
+.main{
+    width: 100%;
+    position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     text-align: center;
+}
+.main h1{
+    font-size: 60px;
+    margin-top: 80px;
+}
+.main p{
+    margin: 2px auto;
+    font-weight: 100;
+     line-height: 25px;
+}
+button{
+    width: 200px;
+    padding: 10px 0px;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+span{
+    background-color: #009688;
+    height: 100%;
+    width: 0%;
+    border-radius: 20px;
+     position: absolute;
+     left: 0px;
+     bottom: 0px;
+     z-index: -1;
+     transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+
+}
+button:hover{
+    border: none;
+}
